@@ -1,6 +1,7 @@
 # Ember-data-query-path
 
-This mixin makes it easy for Ember Data to issue request to url paths.
+This mixin makes it easy for users of Ember Data to issue GET requests to urls that don't follow a predictable format 
+(For example: `/posts/recent` or `/users/current`). It is common for web APIs with complex queries to implement the query entirly on the server side and expose the result set at its own API endpoint. This plugin gives users an easy way to specify a custom `path` needed to make request to these query endpoints.
 
 ## Requirements
 * Ember >= 1.13.0
