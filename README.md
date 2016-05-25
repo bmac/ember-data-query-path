@@ -28,6 +28,7 @@ export default DS.Store.extend(QueryPath);
 
 Then you can use `queryPath` and `queryPathRecord` methods on your store.
 
+#### `Store#queryPath`
 `queryPath` can be used to make a request a path that is expected to return an array of results.
 
 ```js
@@ -61,6 +62,8 @@ export default Ember.Route.extend({
   }
 });
 ```
+
+#### `Store#queryRecordPath`
 
 `queryRecordPath` can be used to make a request a path that is expected to return an a single record.
 
