@@ -31,6 +31,24 @@ Then you can use `queryPath` and `queryPathRecord` methods on your store.
 `queryPath` can be used to make a request a path that is expected to return an array of results.
 
 ```js
+{
+  /**
+   `store.queryPath` will make a request to the findAll url for the type + the `path` argument provided as the 2nd parameter.
+   A optional query object can be provided as the 3rd parameter. This method assumes your api will return an array of records as its response.
+
+   This method is asynchronaous.
+
+   @method queryPath
+   @param {String} type
+   @param {String} path
+   @param {Object} query
+   @return {Promise}
+  */
+  queryPath: function(type, path, query),
+}
+```
+
+```js
 // app/routes/my-route.js
 import Ember from 'ember';
 
@@ -44,6 +62,23 @@ export default Ember.Route.extend({
 
 `queryRecordPath` can be used to make a request a path that is expected to return an a single record.
 
+```js
+{
+  /**
+   `store.queryRecordPath` will make a request to the findAll url for the type + the `path` argument provided as the 2nd parameter.
+   A optional query object can be provided as the 3rd parameter. This method assumes your api will return a single record as its response.
+
+   This method is asynchronaous.
+
+   @method queryRecordPath
+   @param {String} type
+   @param {String} path
+   @param {Object} query
+   @return {Promise}
+  */
+  queryRecordPath: function(type, path, query),
+}
+```
 
 ```js
 // app/routes/my-route.js
