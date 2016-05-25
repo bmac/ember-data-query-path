@@ -48,6 +48,8 @@ Then you can use `queryPath` and `queryPathRecord` methods on your store.
 }
 ```
 
+##### Example
+
 ```js
 // app/routes/my-route.js
 import Ember from 'ember';
@@ -79,6 +81,8 @@ export default Ember.Route.extend({
   queryRecordPath: function(type, path, query),
 }
 ```
+
+##### Example
 
 ```js
 // app/routes/my-route.js
